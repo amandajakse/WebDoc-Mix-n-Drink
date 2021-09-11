@@ -1,0 +1,328 @@
+/**
+ * file: style.css
+ * purpose: styles, animation etc
+ **/
+/* TO INSERT FONT "POPPINS"- font-family: 'Poppins', sans-serif; */
+/* TO INSERT FONT "LOBSTER"- font-family: 'Lobster', cursive; */
+/* TO INSERT FONT "MONTSERRAT"- font-family: 'Montserrat', sans-serif; */
+
+/* Basic CSS reset */
+*,
+:after,
+:before {
+    
+    
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+    font-family: 'Poppins', sans-serif;
+    background-color: #F3F3F3;
+}
+
+.page_body {
+    max-width: 100%;
+    padding: 5px;
+    margin: 0 auto;
+}
+
+html {
+    padding: 0;
+    margin: 0;
+}
+
+
+/*---- HEADER ------*/
+header {
+    text-align: center;
+    background-color: #E1067A;
+    font-family: 'Poppins', sans-serif;
+    color: #161616;
+    width: 100%;
+    font-size: 1.1rem;
+    padding: 5px 0;
+}
+
+
+/*---- INTRO SCREEN ------*/
+.intro {}
+
+.intro_img {
+    max-width: 100%;
+
+}
+
+
+/*---- BOTTLE SHOWCASE ------*/
+.showcase_group {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 40px;
+    padding-top: 40px;
+}
+
+.button_showcase {
+    font-size: 4rem;
+    color: #E1067A;
+    margin-top: 190px;
+}
+
+.showcase_img {
+    width: 120px;
+    height: auto;
+    margin: 0 55px;
+    animation-name: bottleZoom;
+    animation-duration: .2s;
+    transition: transform .2s;
+}
+
+
+.showcase_img:hover {
+    transform: scale(1.2);
+}
+
+.button_left {
+    margin-right: 20px;
+}
+
+.button_right {
+    margin-left: 20px;
+}
+
+.center_CTA_button {
+    justify-content: center;
+    text-align: center;
+    margin: 30px auto;
+}
+
+.CTA_button {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.2rem;
+    color: #0C0C23;
+    border: solid 3px #E1067A;
+    padding: 15px 50px;
+    margin-bottom: 20px;
+    border-radius: 50px;
+    text-align: center;
+}
+
+
+
+/*---- INFO SECTION ------*/
+.info_card_group {
+    background-color: #161616;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.info_card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+
+.reverse_card {
+    flex-direction: row-reverse;
+}
+
+.info_text {
+    color: #EBF2F2;
+    font-size: 1.6rem;
+    width: 33%;
+    text-align: end;
+    margin: 0 30px;
+    padding-top: 60px;
+}
+
+.reverse_text {
+    text-align: left;
+}
+
+.info_img {
+    width: 33%;
+    height: auto;
+    border: solid #EBF2F2 5px;
+
+}
+
+/*---- LIVE TIME ------*/
+
+.time_sign {
+    background-color: #161616;
+    text-align: center;
+    border-top: solid 5px #E1067A;
+}
+
+.time_header {
+    color: #E1067A;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    margin-bottom: 10px;
+    padding-top: 20px;
+}
+
+.status_display {
+    color: #EBF2F2;
+    font-size: 2rem;
+    padding-bottom: 30px;
+}
+
+
+
+
+
+
+
+/*---- ORDER TUTORIAL ------*/
+.order_tutorial_header {
+    background-color: #EBF2F2;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    margin: 25px auto 40px 30px;
+}
+
+.order_tutorial_group {
+    display: flex;
+    flex-direction: row;
+    margin-left: 270px;
+    margin-bottom: 35px;
+}
+
+.order_tutorial {
+    display: flex;
+    flex-direction: column;
+}
+
+.tutorial_icon {
+    width: 22%;
+    height: auto;
+}
+
+.tutorial_text {
+    color: #161616;
+    font-size: 1.5rem;
+    max-width: 20%;
+    justify-content: center;
+    text-align: center;
+}
+
+/*---- VIDEO DRINK TUTORIALS ------*/
+.drink_mix_section {
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.drink_tutorial_header {
+    color: #E1067A;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.7rem;
+    padding: 40px 20px;
+    text-align: left;
+}
+
+.drink_name {
+    color: #EBF2F2;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.7rem;
+    margin-bottom: 10px;
+}
+
+.video_tutorial {
+    width: 700px;
+    border: solid 10px #EBF2F2;
+}
+
+.drink_mix_section {
+    background-color: #161616;
+}
+
+.control_button {
+    background-color: #EBF2F2;
+    border-radius: 25px;
+    width: 5%;
+    height: auto;
+    padding: 20px;
+}
+
+.CTA_more {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.2rem;
+    color: #0C0C23;
+    border: solid 3px #E1067A;
+    padding: 15px 50px;
+    margin-bottom: 20px;
+    border-radius: 50px;
+    text-align: center;
+    background-color: #EBF2F2;
+
+}
+
+.PH_message {
+    color: #EBF2F2;
+    font-size: 1rem;
+
+}
+
+/*---- FINAL SCENE ------*/
+.ending_scene {
+    margin-top: 0;
+}
+
+.party_img {
+    width: 100%;
+    height: auto;
+}
+
+.ending_CTA {
+    margin: 50px auto;
+}
+
+/*---- FOOTER ------*/
+footer {
+    background-color: #0C0C23;
+    display: flex;
+    flex-direction: row;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 100%;
+    margin-top: 40px;
+    border-top: solid 10px #E1067A;
+
+}
+
+.icon_group {
+    margin-left: 60px;
+}
+
+.SoMe_icon {
+    background-color: #EBF2F2;
+    padding: 15px;
+    border-radius: 20px;
+    width: 85px;
+    height: auto;
+    margin: 10px;
+    opacity: 90%;
+}
+
+.footer_text_group {
+    text-align: end;
+    color: #EBF2F2;
+    margin-left: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_text {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    color: #EBF2F2;
+}

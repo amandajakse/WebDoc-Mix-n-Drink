@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/mystyle.css">
+    <title>Party with Mix n' Drink</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- ------------HEADER--------------- -->
+    <header>
+        <p> You must be 18 years old to buy alcohol with over 16.5%</p>
+    </header>
+    <!-- -----------INTRO SCREEN---------------- -->
+
+    <main>
+        <div id="warning" class="intro">
+            <img src="images/shot_glass.png" alt="Shot glass close up" class="intro_img">
+        </div>
+
+        <!-- -----------BOTTLE SHOWCASE---------------- -->
+        <div class="showcase_group">
+            <p class="button_showcase button_left">&#10094;</p>
+
+            <img id="bottle" src="images/bottle_one.png" alt="bottle" class="showcase_img zoom">
+            <img id="bottle" src="images/bottle_two.png" alt="bottle" class="showcase_img zoom">
+            <img id="bottle" src="images/bottle_three.png" alt="bottle" class="showcase_img zoom">
+            <img id="bottle" src="images/bottle_four.png" alt="bottle" class="showcase_img zoom">
+
+            <p class="button_showcase button_right">&#10095;</p>
+        </div>
+
+
+
+        <div class="center_CTA_button">
+            <a class="CTA_button" href="https://mixndrink.dk/alkohol/"> Order here now</a>
+        </div>
+
+
+        <!-- -----------INFO SECTION---------------- -->
+
+        <div class="info_card_group">
+            <div class="info_card">
+                <p class="info_text">Wide variety of beverages to chose from</p>
+                <img class="info_img" src="images/bottle_row.png" alt="row of bottles">
+            </div>
+
+            <div class="info_card reverse_card">
+                <p class="info_text reverse_text">Delivery withing 1-2 hours or with premium in less than 45 minutes</p>
+                <img class="info_img" src="images/delvery_man.png" alt="delivery man">
+            </div>
+
+            <div class="info_card">
+                <p class="info_text">Delivery to your doorstep!</p>
+                <img class="info_img" src="images/parcel.png" alt="parcel">
+            </div>
+        </div>
+
+
+
+        <!-- ----------LIVE TIME----------------- -->
+
+        <div class="time_sign">
+            <h2 class="time_header"> Currently:</h2>
+            <div class="status_display" id="status"></div>
+        </div>
+
+
+
+
+        <!-- -----------ORDER TUTORIAL---------------- -->
+
+
+
+        <h4 class="order_tutorial_header"> It is that simple</h4>
+        <div class="order_tutorial_group">
+            <div class="order_tutorial">
+                <img class="tutorial_icon" src="images/icons/press-button.png" alt="click">
+                <p class="tutorial_text">Select</p>
+            </div>
+
+            <div>
+                <img class="tutorial_icon" src="images/icons/cart_icon.png" alt="cart">
+                <p class="tutorial_text">Order</p>
+            </div>
+
+            <div>
+                <img class="tutorial_icon" src="images/icons/truck_icon.png" alt="truck">
+                <p class="tutorial_text">Get delivered</p>
+            </div>
+        </div>
+
+        <!-- ------------VIDEO DRINK TUTORIALS--------------- -->
+        <div class="drink_mix_section">
+            <h2 class="drink_tutorial_header"> Mix your own drinks</h2>
+            <h4 class="drink_name">Mojito</h4>
+
+            <video id="myVideo" class="video_tutorial">
+                <source src="videos/placeholder_video.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+            <br>
+            <p class="PH_message">*The shown video is a placeholder</p>
+            <img src="images/icons/play_icon.png" alt="Play Button" id="playButton" class="control_button">
+            <img src="images/icons/mute_icon.png" alt="sound Button" id="shutup" class="control_button">
+
+
+
+
+
+            <div class="center_CTA_button">
+                <a class="CTA_more" href="https://mixndrink.dk/opskrifter/">See all the recipes</a>
+            </div>
+
+        </div>
+
+
+
+
+        <!-- -----------FINAL SCENE---------------- -->
+
+        <div class="ending_scene">
+            <img class="party_img" src="images/party.png" alt="party">
+            <div class="center_CTA_button">
+                <a class="CTA_button ending_CTA" href="https://mixndrink.dk/alkohol/"> Order here now</a>
+            </div>
+        </div>
+
+
+
+    </main>
+
+    <!-- -------------FOOTER-------------- -->
+    <footer>
+        <div class="icon_group">
+            <a href="https://www.linkedin.com/company/mix-n-drink/about/"> <img src="images/icons/linkedin_icon.png" alt="linkedin_icon" class="SoMe_icon"></a>
+            <a href="https://www.instagram.com/mixndrinkaarhus/"> <img src="images/icons/instagram_icon.png" alt="instagram_icon" class="SoMe_icon"></a>
+            <a href="https://www.facebook.com/mixndrink"><img src="images/icons/facebook_icon.png" alt="facebook_icon" class="SoMe_icon"></a>
+        </div>
+
+
+        <div class="footer_text_group">
+            <a href="https://mixndrink.dk/kontakt/" class="footer_text">Contacts</a>
+            <a href="https://mixndrink.dk/handelsbetingelser/" class="footer_text">Terms and conditions</a>
+            <a href="https://mixndrink.dk/handelsbetingelser/" class="footer_text">Payment methods</a>
+            <a href="https://mixndrink.dk/faq/" class="footer_text">FAQ</a>
+        </div>
+    </footer>
+
+
+    <!-- scripts -->
+    <script src="js/js.js"></script>
+</body>
+
+</html>
